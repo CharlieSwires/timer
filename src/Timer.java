@@ -25,5 +25,12 @@ public class Timer extends Thread{
         t.start();
         sleep(10000);
         t.finish();
+        t = null;
+        t = new Timer();
+        t.start();
+        sleep(11000);
+        t.finish();
+        t = null;
+
     }
 }
